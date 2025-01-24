@@ -10,7 +10,7 @@ SOURCE_FILES := $(shell find $(SOURCE_DIR) -name '*.c')
 OBJECT_FILES := $(SOURCE_FILES:%=$(BINARY_DIR)/%.o)
 
 CC     := gcc
-CFLAGS := -Wall -Wextra $(addprefix -I, $(HEADER_DIR))
+CFLAGS := -Wall -Wextra $(addprefix -I, $(HEADER_DIR)) 
 
 # ------------------------------------------------------------------------------
 # compiler rule
